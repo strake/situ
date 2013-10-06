@@ -1,0 +1,10 @@
+.TH SITU 1
+.SH NAME
+situ \- modify files in situ
+.SH SYNOPSIS
+.B situ
+.I program argument ...
+.SH OPERATION
+Situ modifies each file newline-terminately named on 0 by piping it thru the given arguments. File names for which this returns 0 are printed to 1.
+
+The directory that the file is in is never modified in the operation of situ, i.e. the file is never moved or deleted.
